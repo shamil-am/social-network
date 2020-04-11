@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');html,body{
+    margin:0;
+    padding:0;
+    background-color: #953e46;
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+    a:hover{
+        text-decoration: none;
+    }
+   
+}
+*{
+    box-sizing: border-box;
+}
+header{
+    p,span,h5{
+        margin:0;
+        padding:0;
+    }
+    i{
+       font-size: 12px;
+    }
+    a{
+        display: inline-block;
+    }
+    .container{
+        padding-top: 30px;
+        padding-bottom: 30px;
+        .row{
+            .icon{
+                h2{
+                    color: #f4e3cf;
+                    margin:0;
+                    span{
+                        color: #ffffff !important;
+                    }
+                }
+            }
+            .search-bar{
+                .search{
+                    position: relative;
+                    input{
+                        padding:8px 50px 8px 20px;
+                        background-color: #f4e3cf;
+                    }
+                    a{
+                        position: absolute;
+                        color: #953e46;
+                        right: 0px;
+                        top: 0px;
+                        padding: 10px 16px;
+                    }
+                }
+            }
+            .user-upload{
+                a{
+                    padding: 10px 15px;
+                    background-color: #f4e3cf;
+                    color: #953e46;
+                }
+                .user{
+                    margin: 0px 15px;
+                }
+                .user-name{
+                    color: #f4e3cf;
+                }
+            }
+        }
+    }
+}
+nav{
+    .container{
+        .row{
+            .navmenu{
+                .nav-border{
+                    border-top: 2px solid #f4e3cf;
+                    border-bottom: 2px solid #f4e3cf;
+                    a{
+                        display: inline-block;
+                        padding:10px 0px;
+                        color: #f4e3cf;
+                    }
+                    span{
+                        color:#f4e3cf;
+                        display: inline-block;
+                        padding: 0px 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+section.videos{
+    padding-top: 48px;
+    .col-12.col-lg-8{
+        .improve{
+            height:272px;
+            background-color: #f4e3cf;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            padding: 10px;
+            .name{
+                display: flex;
+                flex-direction: column;
+            }
+            span{
+                font-size: 10px;
+            }
+        }
+        .john,.doe,.michael,.ahmet{
+            height:162px;
+            background-color: #f4e3cf;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            padding: 10px;
+            span{
+                font-size: 10px;
+            }
+        }
+        .upload{
+            height:100px;
+            background-color: transparent;
+            border: 2px solid #f4e3cf;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            span{
+                font-size: 12px;
+                color: #f4e3cf;
+            }
+            i{
+                font-size: 2rem;
+                color: #f4e3cf;
+                margin-right: 1rem;
+            }
+        }
+    }
+    .col-12.col-lg-4{
+        ul{
+            padding: 0;
+            list-style: none;
+            border-top: 2px solid #f4e3cf;
+            border-bottom: 2px solid #f4e3cf;
+            padding-top: 5px;
+            li{
+                position: relative;
+                display: flex;
+                padding: 5px;
+                margin-bottom: 10px;
+                border: 1px solid transparent;
+                &::after{
+                    content: "";
+                    width: 0;
+                    height: 0;
+                    border-style: solid;
+                    border-width: 0 20px 20px 0;
+                    border-color: transparent #f4e3cf transparent transparent;
+                    position: absolute;
+                    top:0;
+                    right:0;
+                    z-index: 9;
+                    opacity: 0;
+                }
+                &::before{
+                    content: "+";
+                    position: absolute;
+                    top:-5px;
+                    right:0;
+                    z-index: 99;
+                    color: #953e46;
+                    transform: rotate(45deg);
+                    opacity: 0;
+                }
+                &:hover{
+                    border: 1px solid #f4e3cf;
+                    cursor: pointer;
+                    &::after,&::before{
+                        opacity:1;
+                    }
+                }
+
+                .img{
+                    height:50px;
+                    width: 80px;
+                    background-color: #f4e3cf;
+                    margin-right: 40px;
+                }
+                .imgcontent{
+                    h6,span,p{
+                        margin:0;
+                        color: #f4e3cf;
+                    }
+                    h6>span{
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+
+}
