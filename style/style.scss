@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');html,body{
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+html,body{
     margin:0;
     padding:0;
     background-color: #953e46;
@@ -9,9 +10,11 @@
     }
    
 }
+
 *{
     box-sizing: border-box;
 }
+
 header{
     p,span,h5{
         margin:0;
@@ -68,6 +71,7 @@ header{
         }
     }
 }
+
 nav{
     .container{
         .row{
@@ -303,6 +307,93 @@ section.people{
                     color: #953e46;
                 }
             }
+        }
+    }
+}
+
+section.documents{
+    padding-top: 48px;
+        h3{
+            color: #f4e3cf;
+            margin:0;
+            padding:0;
+        }
+        .mobile{
+            height:290px;
+            background-color: #f4e3cf;
+            padding: 10px;
+            color: #953e46;
+            span{
+                font-size: 10px;
+            }
+        }
+        .marketing,.marketing,.html5,.become,.showdocument{
+            height:141px;
+            background-color: #f4e3cf;
+            padding:10px;
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+            color: #953e46;
+            span{
+                font-size: 10px;
+
+            }
+        }
+        .showdocument{
+            background-color: transparent !important;
+            border: 2px solid #f4e3cf;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #f4e3cf;
+            span{
+                font-size: 12px;
+            }
+        }
+}
+
+footer{
+    padding-top: 60px;
+    .social{
+        ul{
+            padding:20px 0 0 0;
+            border-top: 2px solid #f4e3cf;
+            list-style: none;
+            display: flex;
+            li{
+                margin-right: 5px;
+                a{
+                    display: inline-block;
+                    padding: 10px 15px;
+                    background-color: #f4e3cf;
+                    color: #953e46;
+                }
+            }
+        }
+    }
+    .contacts{
+        ul{
+            list-style: none;
+            padding:0;
+            display: flex;
+            li{
+                a{
+                    color: #f4e3cf;
+                    font-size: 12px;
+                }
+                span{
+                    font-size: 10px;
+                    color: #f4e3cf;
+                    padding: 0px 5px;
+                }
+            }
+        }
+    }
+    .copyright,.privacy{
+        span{
+            font-size: 12px;
+            color: #f4e3cf;
         }
     }
 }

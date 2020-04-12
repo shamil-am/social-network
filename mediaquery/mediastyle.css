@@ -9,6 +9,9 @@
     flex: 0 0 100% !important;
     max-width: 100% !important;
    }
+   footer .contacts ul li a,span{
+      font-size: 8px !important;
+   }
   }
   
   /* Small devices (portrait tablets and large phones, 600px and up) */
