@@ -101,12 +101,14 @@ section.videos{
             justify-content: space-between;
             align-items: flex-end;
             padding: 10px;
+            color: #953e46;
             .name{
                 display: flex;
                 flex-direction: column;
             }
             span{
                 font-size: 10px;
+                color: #953e46;
             }
         }
         .john,.doe,.michael,.ahmet{
@@ -116,6 +118,7 @@ section.videos{
             justify-content: space-between;
             align-items: flex-end;
             padding: 10px;
+            color: #953e46;
             span{
                 font-size: 10px;
             }
@@ -202,4 +205,104 @@ section.videos{
         }
     }
 
+}
+
+section.people{
+    padding-top: 48px;
+    .leftcontent{
+        h3{
+            color: #f4e3cf;
+            margin:0;
+            padding:0;
+        }
+        .wassen{
+            height:290px;
+            background-color: #f4e3cf;
+            padding: 10px;
+            color: #953e46;
+            span{
+                font-size: 10px;
+            }
+        }
+        .john,.doe,.michael,.ahmet,.showwork{
+            height:141px;
+            background-color: #f4e3cf;
+            padding:10px;
+            display: flex;
+            align-items: flex-end;
+            color: #953e46;
+            span{
+                font-size: 10px;
+
+            }
+        }
+        .showwork{
+            background-color: transparent !important;
+            border: 2px solid #f4e3cf;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #f4e3cf;
+            span{
+                font-size: 12px;
+            }
+        }
+    }
+    .rightcontent{
+        h3{
+            color: #f4e3cf;
+        }
+        .row{
+            padding-bottom: 0.5rem;
+        }
+        .col-6{
+            &:nth-child(2n-1){
+                padding-right: 0.25rem;
+            }
+            &:nth-child(2n){
+                padding-left: 0.25rem;
+            }
+            div{
+                background-color: #f4e3cf;
+                height: 100px;
+                padding: 10px;
+                display: flex;
+                align-items: flex-end;
+                position: relative;
+                &:hover{
+                    cursor: pointer;
+                    &::before,&::after{
+                        opacity:1;
+                    }
+                }
+                &:before{
+                    content: "";
+                    width: 0;
+                    height: 0;
+                    border-style: solid;
+                    border-width: 0 20px 20px 0;
+                    border-color: transparent #5f272d transparent transparent;
+                    position: absolute;
+                    top:0;
+                    right:0;
+                    opacity: 0;
+                    z-index: 9;
+                }
+                &:after{
+                    content: "+";
+                    position: absolute;
+                    top:-6px;
+                    right:0;
+                    z-index: 99;
+                    opacity: 0;
+                    color: #f4e3cf;
+                }
+
+                span{
+                    font-size: 12px;
+                    color: #953e46;
+                }
+            }
+        }
+    }
 }

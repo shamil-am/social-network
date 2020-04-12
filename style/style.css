@@ -109,6 +109,7 @@ section.videos .col-12.col-lg-8 .improve {
       -ms-flex-align: end;
           align-items: flex-end;
   padding: 10px;
+  color: #953e46;
 }
 
 section.videos .col-12.col-lg-8 .improve .name {
@@ -123,6 +124,7 @@ section.videos .col-12.col-lg-8 .improve .name {
 
 section.videos .col-12.col-lg-8 .improve span {
   font-size: 10px;
+  color: #953e46;
 }
 
 section.videos .col-12.col-lg-8 .john, section.videos .col-12.col-lg-8 .doe, section.videos .col-12.col-lg-8 .michael, section.videos .col-12.col-lg-8 .ahmet {
@@ -138,6 +140,7 @@ section.videos .col-12.col-lg-8 .john, section.videos .col-12.col-lg-8 .doe, sec
       -ms-flex-align: end;
           align-items: flex-end;
   padding: 10px;
+  color: #953e46;
 }
 
 section.videos .col-12.col-lg-8 .john span, section.videos .col-12.col-lg-8 .doe span, section.videos .col-12.col-lg-8 .michael span, section.videos .col-12.col-lg-8 .ahmet span {
@@ -238,5 +241,128 @@ section.videos .col-12.col-lg-4 ul li .imgcontent h6, section.videos .col-12.col
 
 section.videos .col-12.col-lg-4 ul li .imgcontent h6 > span {
   font-size: 12px;
+}
+
+section.people {
+  padding-top: 48px;
+}
+
+section.people .leftcontent h3 {
+  color: #f4e3cf;
+  margin: 0;
+  padding: 0;
+}
+
+section.people .leftcontent .wassen {
+  height: 290px;
+  background-color: #f4e3cf;
+  padding: 10px;
+  color: #953e46;
+}
+
+section.people .leftcontent .wassen span {
+  font-size: 10px;
+}
+
+section.people .leftcontent .john, section.people .leftcontent .doe, section.people .leftcontent .michael, section.people .leftcontent .ahmet, section.people .leftcontent .showwork {
+  height: 141px;
+  background-color: #f4e3cf;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  color: #953e46;
+}
+
+section.people .leftcontent .john span, section.people .leftcontent .doe span, section.people .leftcontent .michael span, section.people .leftcontent .ahmet span, section.people .leftcontent .showwork span {
+  font-size: 10px;
+}
+
+section.people .leftcontent .showwork {
+  background-color: transparent !important;
+  border: 2px solid #f4e3cf;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #f4e3cf;
+}
+
+section.people .leftcontent .showwork span {
+  font-size: 12px;
+}
+
+section.people .rightcontent h3 {
+  color: #f4e3cf;
+}
+
+section.people .rightcontent .row {
+  padding-bottom: 0.5rem;
+}
+
+section.people .rightcontent .col-6:nth-child(2n-1) {
+  padding-right: 0.25rem;
+}
+
+section.people .rightcontent .col-6:nth-child(2n) {
+  padding-left: 0.25rem;
+}
+
+section.people .rightcontent .col-6 div {
+  background-color: #f4e3cf;
+  height: 100px;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  position: relative;
+}
+
+section.people .rightcontent .col-6 div:hover {
+  cursor: pointer;
+}
+
+section.people .rightcontent .col-6 div:hover::before, section.people .rightcontent .col-6 div:hover::after {
+  opacity: 1;
+}
+
+section.people .rightcontent .col-6 div:before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 20px 20px 0;
+  border-color: transparent #5f272d transparent transparent;
+  position: absolute;
+  top: 0;
+  right: 0;
+  opacity: 0;
+  z-index: 9;
+}
+
+section.people .rightcontent .col-6 div:after {
+  content: "+";
+  position: absolute;
+  top: -6px;
+  right: 0;
+  z-index: 99;
+  opacity: 0;
+  color: #f4e3cf;
+}
+
+section.people .rightcontent .col-6 div span {
+  font-size: 12px;
+  color: #953e46;
 }
 /*# sourceMappingURL=style.css.map */
